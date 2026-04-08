@@ -2,35 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>English – Class Materials</title>
+  <title>English – Learning Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 20px;
-      line-height: 1.6;
+      background: #fafafa;
+      color: #333;
     }
+
     h1 {
       text-align: center;
+      margin-bottom: 10px;
     }
-    a {
-      display: block;
-      margin: 10px 0;
+
+    .subtitle {
+      text-align: center;
       font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #f0f4ff;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #222;
+      font-size: 18px;
+      font-weight: bold;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .card span {
+      display: block;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .card:hover {
+      background: #dbe4ff;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-<h1>English Lessons</h1>
+  <h1>English Lessons</h1>
+  <div class="subtitle">
+    Grammar • Vocabulary • Reading • Listening • Speaking
+  </div>
 
-<p>Select a lesson:</p>
+  <div class="menu">
+    grammar/past-simple.htmlGrammar</a>
+    vocabulary/food.htmlVocabulary</a>
+    reading/texts.htmlReading</a>
+    listening/audio.htmlListening</a>
+    #Speaking</a>
+    #Writing</a>
+    #Exam Practice</a>
+  </div>
 
-<a href="past-simple.html">Past Simple</a>
-<a href="present-perfect.html">Present Perfect</a>
+  <footer>
+    © English lessons – materials for classroom use
+  </footer>
 
 </body>
 </html>
