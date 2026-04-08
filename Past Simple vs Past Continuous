@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Simple vs. Past Continuous - Rule: While & When</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f8fafc;
+        }
+        .correct { border-color: #10b981 !important; background-color: #ecfdf5 !important; color: #065f46; }
+        .incorrect { border-color: #ef4444 !important; background-color: #fef2f2 !important; color: #991b1b; }
+        input[type="text"] { transition: all 0.2s; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-8 text-white text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Past Simple vs. Continuous</h1>
+            <p class="text-blue-100 italic">Pravidlo: While vs. When</p>
+        </div>
+
+        <!-- Grammar Guide -->
+        <div class="p-6 border-b border-gray-100 bg-blue-50">
+            <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                <span class="mr-2">📝</span> Pravidlá pre toto cvičenie:
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-500">
+                    <p><strong class="text-orange-600 uppercase">While</strong> signalizuje dlhý dej.</p>
+                    <p class="mt-1 font-semibold">Použi: Past Continuous</p>
+                    <p class="text-xs text-gray-500 italic">(was/were + -ing)</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-500">
+                    <p><strong class="text-green-600 uppercase">When</strong> signalizuje krátky dej.</p>
+                    <p class="mt-1 font-semibold">Použi: Past Simple</p>
+                    <p class="text-xs text-gray-500 italic">(-ed alebo 2. stĺpec)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="p-6 md:p-10">
+            <div id="quiz-container" class="space-y-4">
+                <!-- Vety 1-20 -->
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">1. While I <input type="text" data-answer="was walking" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-36 text-center" placeholder="(walk)"> home, I found a wallet.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">2. We were eating dinner when my friend <input type="text" data-answer="arrived" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-32 text-center" placeholder="(arrive)">.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">3. While she <input type="text" data-answer="was cooking" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-36 text-center" placeholder="(cook)"> soup, she burned her finger.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">4. They were playing football when it <input type="text" data-answer="started" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-32 text-center" placeholder="(start)"> to rain.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">5. While the students <input type="text" data-answer="were writing" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(write)"> the test, the teacher left the room.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">6. The cat was sleeping on the sofa when the dog <input type="text" data-answer="barked" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-32 text-center" placeholder="(bark)">.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">7. While we <input type="text" data-answer="were waiting" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(wait)"> for the bus, we saw a famous actor.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">8. He was driving fast when the police <input type="text" data-answer="stopped" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-32 text-center" placeholder="(stop)"> him.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">9. While I <input type="text" data-answer="was cleaning" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(clean)"> my room, I found my old diary.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">10. We were watching TV when the lights <input type="text" data-answer="went" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-28 text-center" placeholder="(go)"> out.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">11. While it <input type="text" data-answer="was snowing" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(snow)">, the children stayed inside.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">12. She was listening to music when her phone <input type="text" data-answer="died" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-28 text-center" placeholder="(die)">.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">13. While they <input type="text" data-answer="were swimming" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(swim)"> in the sea, they saw a dolphin.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">14. I was doing my homework when my brother <input type="text" data-answer="interrupted" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(interrupt)"> me.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">15. While the birds <input type="text" data-answer="were singing" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(sing)">, I opened the window.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">16. Peter was taking a shower when someone <input type="text" data-answer="knocked" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-32 text-center" placeholder="(knock)"> on the door.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">17. While we <input type="text" data-answer="were traveling" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(travel)"> to Paris, we met a nice couple.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">18. The baby was crying when the mother <input type="text" data-answer="entered" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-32 text-center" placeholder="(enter)"> the room.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">19. While I <input type="text" data-answer="was working" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-40 text-center" placeholder="(work)"> in the garden, I hurt my back.</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-gray-700">20. They were having a picnic when a bee <input type="text" data-answer="stung" class="mx-1 p-1 border-b-2 border-blue-300 bg-transparent focus:outline-none w-28 text-center" placeholder="(sting)"> him.</p>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="mt-10 flex flex-col items-center gap-6">
+                <button onclick="checkAnswers()" class="w-full md:w-auto px-12 py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition-all shadow-lg active:scale-95 text-lg">
+                    Skontrolovať odpovede
+                </button>
+                
+                <div id="result-display" class="hidden flex-col items-center">
+                    <div class="text-3xl font-bold text-gray-800 mb-2">Skóre: <span id="score-text" class="text-blue-600">0 / 20</span></div>
+                    <button onclick="resetQuiz()" class="text-gray-500 hover:text-blue-600 underline font-medium">Skúsiť ešte raz</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 text-center text-gray-400 text-sm">
+            Zamerané na rozdiel medzi When (Past Simple) a While (Past Continuous).
+        </div>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            let correctCount = 0;
+            const total = inputs.length;
+
+            inputs.forEach(input => {
+                const userAnswer = input.value.trim().toLowerCase().replace(/\s+/g, ' ');
+                const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+
+                if (userAnswer === correctAnswer) {
+                    input.classList.remove('incorrect');
+                    input.classList.add('correct');
+                    correctCount++;
+                } else {
+                    input.classList.remove('correct');
+                    input.classList.add('incorrect');
+                }
+            });
+
+            const resultDisplay = document.getElementById('result-display');
+            const scoreText = document.getElementById('score-text');
+            
+            resultDisplay.classList.remove('hidden');
+            resultDisplay.classList.add('flex');
+            scoreText.innerText = `${correctCount} / ${total}`;
+
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
+        function resetQuiz() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            inputs.forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'incorrect');
+            });
+            document.getElementById('result-display').classList.add('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
